@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 
-const Message = ({text}) => {
+const Message = ({text}: {text: string}) => {
 
     // BUG: the name regenerates on every new message. old messages should retain their name
     const name = faker.person.fullName();
